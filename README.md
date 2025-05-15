@@ -82,9 +82,7 @@ Target:
 
 The model is evaluated using:
 - Accuracy Score
-- Confusion Matrix
-- Visualization of prediction results
-
+- 
 ---
 
 ## 🧠 Key Learnings
