@@ -1,28 +1,68 @@
+
 # 🧠 Support Vector Machine (SVM) from Scratch – Diabetes Prediction
 
-This project demonstrates a complete **implementation of the Support Vector Machine (SVM) algorithm from scratch using Python**, without relying on high-level libraries like `scikit-learn`. The created model is applied to a real-world classification problem — **predicting whether a person is diabetic** based on medical features.
+This project showcases a complete **Support Vector Machine (SVM) model built from scratch** in Python. The model is implemented manually without using `scikit-learn` and is packaged as a Python module for ease of use.
+
+The SVM model is trained on real-world medical data to **predict whether a person is diabetic or not**.
 
 ---
 
-## 🎯 Objective
+## 🚀 What I Created
 
-To showcase a deep understanding of machine learning by **designing and implementing the SVM algorithm manually**, and applying it to a structured dataset for binary classification.
+- ✅ Custom SVM algorithm (Python implementation)
+- ✅ Training from scratch using hinge loss and gradient descent
+- ✅ Standalone `.py` file that can be imported as a module
+- ✅ Example usage in a Jupyter Notebook for diabetes prediction
 
 ---
 
-## ⚙️ What I Built
+## 📂 File Structure
 
-- ✅ Developed the **SVM algorithm from the ground up**, including:
-  - Gradient descent optimization
-- ✅ Implemented model training, prediction, and evaluation manually
-- ✅ Used the model to **classify diabetes presence** using real-world health data
-- ✅ Visualized results and decision boundaries to explain model behavior
+- `svm_model.py` — Your custom SVM model class  
+- `Support_Vector_Machine.ipynb` — Notebook demonstrating diabetes classification  
+- `requirements.txt` — Required Python packages  
+
+---
+
+## ⚙️ How to Use the Model
+
+1. **Download `SVM_classifier.py` to your local project folder**
+
+2. **Import it in your script or notebook:**
+
+```python
+from SVM_classifier import SVM
+
+# Create model instance
+model = SVM(learning_rate=0.001, no_of_iterations=1000, lambda_parameter=0.01)
+
+# Train the model
+model.fit(X_train, y_train)
+
+# Make predictions
+predictions = model.predict(X_test)
+```
+
+3. **Required Parameters**:
+   - `learning_rate`: Controls the step size in gradient descent
+   - `no_of_iterations`: Number of iterations for training
+   - `lambda_parameter`: Regularization parameter to avoid overfitting
+
+---
+
+## 📊 Technologies Used
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib / Seaborn
+- Jupyter Notebook
 
 ---
 
 ## 🧪 Dataset Overview
 
-The dataset contains key health indicators:
+Health-related input features:
 - Pregnancies
 - Glucose
 - BloodPressure
@@ -32,25 +72,30 @@ The dataset contains key health indicators:
 - DiabetesPedigreeFunction
 - Age
 
-**Target label:**  
-- `0` → Non-diabetic  
-- `1` → Diabetic
+Target:  
+- `1` = Diabetic  
+- `0` = Non-diabetic
 
 ---
 
-## 📊 Tools & Technologies
+## 📈 Evaluation
 
-- Python (core logic, math, optimization)
-- NumPy (matrix operations)
-- Pandas (data handling)
-- Jupyter Notebook
+The model is evaluated using:
+- Accuracy Score
+- Confusion Matrix
+- Visualization of prediction results
 
 ---
 
-## 🚀 How to Run
-1. Clone this repository.
-2. Install the required packages using `requirements.txt`.
-3. Open the Jupyter notebook and run all cells.
+## 🧠 Key Learnings
 
-## Requirements
-See `requirements.txt` for all dependencies.
+- How Support Vector Machines work internally  
+- Implementing hinge loss and gradient descent manually  
+- Turning a machine learning algorithm into a reusable Python module  
+- Applying the model to a real-world healthcare dataset
+
+---
+
+## 📝 License
+
+This project is released under the **MIT License**.
