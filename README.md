@@ -18,7 +18,7 @@ The SVM model is trained on real-world medical data to **predict whether a perso
 
 ## 📂 File Structure
 
-- `svm_model.py` — Your custom SVM model class  
+- `SVM_classifier.py` — Your custom SVM model class  
 - `Support_Vector_Machine.ipynb` — Notebook demonstrating diabetes classification  
 - `requirements.txt` — Required Python packages  
 
