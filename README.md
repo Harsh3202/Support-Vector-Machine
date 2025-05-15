@@ -1,33 +1,51 @@
-# 🧠 Diabetes Prediction Using Support Vector Machine (SVM)
+# 🧠 Support Vector Machine (SVM) from Scratch – Diabetes Prediction
 
-This project demonstrates how to use a **Support Vector Machine (SVM)** classifier in Python to predict whether a person is diabetic based on various health-related features.
+This project demonstrates a complete **implementation of the Support Vector Machine (SVM) algorithm from scratch using Python**, without relying on high-level libraries like `scikit-learn`. The created model is applied to a real-world classification problem — **predicting whether a person is diabetic** based on medical features.
 
-## 📌 Project Description
+---
 
-- Implemented an end-to-end machine learning pipeline using Python and Jupyter Notebook.
-- Trained an SVM classifier to predict diabetes status using real-world health data.
-- Preprocessed data with scaling and cleaning steps.
-- Evaluated the model's performance using accuracy score, confusion matrix, and other classification metrics.
-- Visualized key patterns and decision boundaries using matplotlib and seaborn.
+## 🎯 Objective
 
-## 🧪 Dataset Features
-The dataset includes medical information such as:
-- Number of pregnancies
-- Glucose level
-- Blood pressure
-- Skin thickness
-- Insulin level
+To showcase a deep understanding of machine learning by **designing and implementing the SVM algorithm manually**, and applying it to a structured dataset for binary classification.
+
+---
+
+## ⚙️ What I Built
+
+- ✅ Developed the **SVM algorithm from the ground up**, including:
+  - Gradient descent optimization
+- ✅ Implemented model training, prediction, and evaluation manually
+- ✅ Used the model to **classify diabetes presence** using real-world health data
+- ✅ Visualized results and decision boundaries to explain model behavior
+
+---
+
+## 🧪 Dataset Overview
+
+The dataset contains key health indicators:
+- Pregnancies
+- Glucose
+- BloodPressure
+- SkinThickness
+- Insulin
 - BMI
-- Diabetes pedigree function
+- DiabetesPedigreeFunction
 - Age
 
-## 🔍 Technologies Used
+**Target label:**  
+- `0` → Non-diabetic  
+- `1` → Diabetic
 
-- Python
-- Scikit-learn (SVM, train-test split, evaluation metrics)
-- Pandas & NumPy
-- Matplotlib & Seaborn
+---
+
+## 📊 Tools & Technologies
+
+- Python (core logic, math, optimization)
+- NumPy (matrix operations)
+- Pandas (data handling)
 - Jupyter Notebook
+
+---
 
 ## 🚀 How to Run
 1. Clone this repository.
